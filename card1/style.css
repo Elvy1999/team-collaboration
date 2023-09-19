@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+main{
+    display: flex;
+}
+
+.left_side{
+    width: 30%;
+    height: 100vh;
+    background-image: url('interactive-card-details-form-main/images/bg-main-desktop.png'); /* Replace with the actual path to your image */
+    background-size: cover; /* This property ensures the image covers the entire element */
+    background-position: center; /* This property centers the image within the element */
+}
+
+.right_side{
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(237, 232, 232);
+    display: flex;
+    justify-content: center;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.right_side label{
+    font-family: 'Space Grotesk', sans-serif;;
+    font-size: 14px;
+
+}
+
+.right_side input:focus {
+    outline: none;
+}
+
+.right_side input{
+    border-radius: 5px;
+    border: 1px solid black;
+}
