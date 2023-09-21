@@ -23,14 +23,22 @@
         <section class="right_side">
             <form action="" class="card-info">
                 <label for="name" id="name">CARDHOLDER NAME</label>
-                <input type="text">
+                <input type="text" placeholder=" e.g. Jane Appleseed"  required>
                 <label for="card-number" id="card-number">CARD NUMBER</label>
-                <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
-         
-                <label for="month">Month:</label>
-                <input type="number" id="month" name="month" min="1" max="12" required>
-                <label for="year">Year:</label>
-                <input type="number" id="year" name="year" min="0" required>
+                <input id="ccn" placeholder=" e.g. 1234 5678 9123 0000" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"  maxlength="19" required>
+                <div class="container">
+                    <div class="month_year">
+                        <label for="month-year">EXP. DATE (MM/YY) </label>
+                        <div>
+                            <input placeholder="MM" type="number" id="month" name="month" min="1" max="12" step="1" required>
+                            <input type="number" placeholder="YY" id="year" name="year" min="0" max="99" required>
+                        </div>
+                    </div>
+                    <div class="cvc">
+                        <label for="CVC" id="CVC"> CVC</label>
+                        <input type="text" placeholder=" e.g.123" pattern="\d{3}" title="Please enter exactly 3 digits" required>
+                    </div>
+                </div>
                 <input type="submit" value="Confirm">
         </form>
         </section>

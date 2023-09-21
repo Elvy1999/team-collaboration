@@ -18,7 +18,7 @@ main{
 .right_side{
     width: 70%;
     height: 100vh;
-    background-color: rgb(237, 232, 232);
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
 }
@@ -26,13 +26,15 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 1em;
 }
+
 
 .right_side label{
     font-family: 'Space Grotesk', sans-serif;;
-    font-size: 14px;
+    font-size: 0.75em;
+    font-weight: medium;
 
 }
 
@@ -41,6 +43,47 @@ main{
 }
 
 .right_side input{
+    height: 2.5em;
+    width: 22em;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #ebebeb;
+}
+
+.month_year input{
+    width: 3.5rem;
+    height: 2rem;
+}
+
+.month_year{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.cvc input{
+    width: 9.6rem;
+    height: 2rem;
+}
+.cvc{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.container{
+    display: flex;
+    gap: 1.2em;
+}
+
+input[type="submit"]{
+    margin-top: 1.5em;
+    background-color: #220930 ;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border: 0.8em;
+}
+
+input[type="submit"]::active{
+    transform: scale(0.98);
 }
